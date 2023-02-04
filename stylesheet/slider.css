@@ -5,11 +5,11 @@
 }
 .slide_img{
     width: 100%;
-    vertical-align: middle;
+    height: 300px;
 }
 .fade{
     animation-name: fade;
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 
 @keyframes fade {
