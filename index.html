@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/main.css">
+    <link rel="stylesheet" href="stylesheet/slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <title>Bunchup | Home</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav_container">
+            <div class="logo_container">
+                <img src="/assests/image/BunchUp_40.png" alt="Bunchup", style="border-radius: 50%;size: 30px;margin: auto;padding: 5px;">
+            </div>
+            <div class="nav_content_container">
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+            </div>
+        </div>
+        <div class="content_container">
+            <div class="main">
+                Commming Soon...
+            </div> 
+            <div class="slider_container">
+                <div class="slides fade">
+                    <img src="/assests/image/Post 5.1.png" class="slide_img">
+            </div>
+            <div class="slides fade">
+                <img src="/assests/image/Post 7.1.png" class="slide_img">
+            </div>
+             
+        </div>
+    <script>
+        let slide = 0;
+        slider();
+        
+        function slider(){
+            const slideso = document.getElementsByClassName("slides");
+            let i;
+            for(i=0; i < slideso.length; i++){
+                slideso[i].style.display = 'none'
+            }
+            slide++
+            if (slide > slideso.length) {slide = 1}  
+            slideso[slide-1].style.display = "block";  
+            setTimeout(slider, 3000)
+        }
+    </script>
+</body>
+
+</html>

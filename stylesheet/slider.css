@@ -1,0 +1,21 @@
+.slider_container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.slide_img{
+    width: 100%;
+    vertical-align: middle;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@keyframes fade {
+    from{opacity: 0.5;}
+    to{opacity: 1;}
+}
+.slides{
+    display: none;;
+}
