@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheet/main.css">
-    <link rel="stylesheet" href="stylesheet/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@600&family=Train+One&display=swap" rel="stylesheet">
     <title>Bunchup | Home</title>
 </head>
-<body>
+<body onload="type()">
     <div class="wrapper">
         <div class="nav_container">
             <div class="logo_container">
@@ -23,38 +22,20 @@
                 <a href="#">About Us</a>
                 <a href="#">Contact Us</a>
                 <a href="#">FAQs</a>
-                <a href="#">Our Team</a>
+                <a href="#our_team">Our Team</a>
             </div>
         </div>
         <div class="content_container">
-            <div class="main">
+            <div class="comming_soon" id="comming_soon">
                 Comming Soon...
             </div> 
-            <div class="slider_container">
-                <div class="slides fade">
-                    <img src="/assests/image/Post 5.1.png" class="slide_img">
+            <div class="comming_soon_sub_heading" id="comming_soon_sub_heading">
             </div>
-            <div class="slides fade">
-                <img src="/assests/image/Post 7.1.png" class="slide_img">
-            </div>
-             
+            
+            
+            
         </div>
-    <script>
-        let slide = 0;
-        slider();
-        
-        function slider(){
-            const slideso = document.getElementsByClassName("slides");
-            let i;
-            for(i=0; i < slideso.length; i++){
-                slideso[i].style.display = 'none'
-            }
-            slide++
-            if (slide > slideso.length) {slide = 1}  
-            slideso[slide-1].style.display = "block";  
-            setTimeout(slider, 10000)
-        }
-    </script>
+    <script src="/scripts/index.js"></script>
 </body>
 
 </html>

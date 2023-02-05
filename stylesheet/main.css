@@ -50,13 +50,41 @@
     background-color: rgb(0, 0, 0);
 }
 
-.main{
-    color: white;
+.comming_soon{
+    padding-top: 20%;
     font-family: 'Train One';
-    font-size: 90px;
+    font-size: 100px;
     color: #FFFF33;
     text-align: center;
-    padding-top: 22%;
-    padding-bottom: 22%;
     user-select: none;
+}
+
+.comming_soon_sub_heading{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 22%;
+    margin: auto;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    user-select: none;
+}
+
+.cursor{
+    color: white;
+}
+
+.comming_soon_sub_heading::after{
+    content: "|";
+    font-size: 150%;
+    line-height: 30px;
+}
+
+.blink_cursor::after{
+    animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { color: transparent }
+    50% { color: white }
 }
