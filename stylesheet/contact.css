@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: black;
+}
+
+#contact{
+    /* box-shadow: 20px 20px 1000px 20px rgba(255, 255, 255, 0.5); */
+    box-shadow: 0px 0px 50px 2px rgba(255, 255, 255, 0.5);
+    background: rgb(255,255,255,0.1);
+}
+i:hover{
+
+    color: #fff333;
+}
+#footer_container{
+
+    background-color: black;
+    box-shadow: 0px 0px 11px 2px rgba(255, 255, 255, 0.5);
+}
